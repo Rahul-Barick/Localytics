@@ -112,7 +112,7 @@ module.exports = function () {
             }
             if (typeof (body) === 'string') {
                 try {
-                    body = JSON.parse(body)
+                    body = JSON.parse(body);
                 } catch (e) {
                     return output(e)
                 }
@@ -132,6 +132,4 @@ module.exports = function () {
             }
         })
     };
-
-
 }
