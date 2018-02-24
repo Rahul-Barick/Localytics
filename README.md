@@ -10,20 +10,20 @@ Flow provides an action builder that lets you insert custom code and create an a
 To create a new custom action yo need to follow Some Conventions.
 These conventions are mainly classified into 3 main blocks of program code as given below:
 
-1. this.input: This block includes the definition of form input fields.
+1. ``this.input``: This block includes the definition of form input fields.
 
-2. this.output: This block includes the definition of the output parameters that your action will return.
+2. ``this.output``: This block includes the definition of the output parameters that your action will return.
 
-3. this.execute: This block includes the program logic that will run inside Flow Engine.
+3. ``this.execute``: This block includes the program logic that will run inside Flow Engine.
 
  # request module: 
  
  As mentioned above, this module helps you to make HTTP calls to third party applications. In order to do that, you need to provide values for following keys:
 
-- Headers: Pass the required values to create a connection.
+- ``Headers``: Pass the required values to create a connection.
 
-- Method: Specify the HTTP method to be used to make an API call.
+- ``Method``: Specify the HTTP method to be used to make an API call.
 
-- URL: Provide the URL to which you wish to make HTTP request.
+- ``URL``: Provide the URL to which you wish to make HTTP request.
 
-- Error handler: Specify error handler function 'function (err,response,body)' for your action. If the action throws an error, it should return 'output(err)', and if the action is executed successfully, it should return 'output(body)'.
+- ``Error handler``: Specify error handler function 'function (err,response,body)' for your action. If the action throws an error, it should return 'output(err)', and if the action is executed successfully, it should return 'output(body)'.
