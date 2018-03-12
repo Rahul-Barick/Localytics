@@ -18,7 +18,7 @@ These conventions are mainly classified into 3 main blocks of program code as gi
 
  # request module: 
  
- As mentioned above, this module helps you to make HTTP calls to third party applications. In order to do that, you need to provide values for following keys:
+ This module helps you to make HTTP calls to third party applications. In order to do that, you need to provide values for following keys:
 
 - ``Headers``: Pass the required values to create a connection.
 
